@@ -93,8 +93,31 @@ img {
 	margin-left:61.8%;
 }
 
+@media (min-width: 80em) {
+	#supp {
+		margin-left: 780px;
+	}
+}
+
 #main h1, #main h2, #main p, #main pre, #main ul, #main ol, #main dl, #supp ul, #supp h3, #supp ol, #supp p, form, .example, #supp #deck {
 	padding: 0 11.8%;
+}
+
+@media (min-width: 80em) {
+	#main {
+		width: auto;
+	}
+
+	#main h1, #main h2, #main p, #main pre, #main ul, #main ol, #main dl, #supp ul, #supp h3, #supp ol, #supp p, form, .example, #supp #deck {
+		max-width: 780px;
+	}
+
+	h1 span,
+	#toc li span,
+	.thumb
+	{
+		max-width: 92px;
+	}
 }
 
 h1 span, #supp span, #toc li span, .quote-from-book .ic, .thumb {
@@ -567,6 +590,12 @@ div.ex2-1-9 {
 
 .ex2-2-2 .basictext {
 	margin-left: 10em;
+}
+
+@media (min-width: 80em) {
+	.ex2-2-2 .basictext {
+		max-width: 505px !important;
+	}
 }
 
 .ex2-2-2 .sidenote {
